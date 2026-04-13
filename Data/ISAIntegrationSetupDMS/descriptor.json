@@ -1,0 +1,35 @@
+﻿{
+  "Descriptor": {
+    "UId": "93c6e193-d49a-3e0d-7649-305718340e33",
+    "Name": "ISAIntegrationSetupDMS",
+    "ModifiedOnUtc": "\/Date(1730260283000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "67c61fa4-2582-4c92-8c04-20c51ffa908e",
+      "Name": "ISAIntegrationSetup"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "2f9f8820-c24e-211d-0a14-11c5e7ee8712",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ISAType",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "22d97f89-649b-4724-a9ec-8e6b6837fa86",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ISAName",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      }
+    ]
+  }
+}

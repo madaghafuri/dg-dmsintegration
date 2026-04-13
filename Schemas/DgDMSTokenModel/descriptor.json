@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "5e74dadd-6a90-4509-82eb-95cad9279b7a",
+    "Name": "DgDMSTokenModel",
+    "ModifiedOnUtc": "\/Date(1736483017000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "DMS: Token Model",
+    "DependsOn": []
+  }
+}

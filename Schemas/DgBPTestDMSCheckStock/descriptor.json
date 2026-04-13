@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "3e804555-6ac5-4a34-bef9-b5522178deb0",
+    "Name": "DgBPTestDMSCheckStock",
+    "ModifiedOnUtc": "\/Date(1758881959000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "[Test] DMS Check Stock",
+    "DependsOn": []
+  }
+}

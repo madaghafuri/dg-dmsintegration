@@ -1,0 +1,21 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "72d54449-c554-4364-b0a2-e1b6b7fe9e3d"
+        },
+        {
+          "SchemaColumnUId": "22d97f89-649b-4724-a9ec-8e6b6837fa86",
+          "Value": "DTE"
+        },
+        {
+          "SchemaColumnUId": "2f9f8820-c24e-211d-0a14-11c5e7ee8712",
+          "Value": "ada490b3-dfc3-416d-9c6f-a58051af4e5a",
+          "DisplayValue": "SIT"
+        }
+      ]
+    }
+  ]
+}

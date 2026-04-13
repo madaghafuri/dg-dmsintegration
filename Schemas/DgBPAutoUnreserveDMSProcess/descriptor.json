@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "21528ca3-4ad7-458f-b704-c7d6b71e4b62",
+    "Name": "DgBPAutoUnreserveDMSProcess",
+    "ModifiedOnUtc": "\/Date(1758881548000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "DMS - Auto Unreserve after UERP Callback",
+    "DependsOn": []
+  }
+}

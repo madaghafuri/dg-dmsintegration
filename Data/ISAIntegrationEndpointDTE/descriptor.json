@@ -1,0 +1,77 @@
+﻿{
+  "Descriptor": {
+    "UId": "1cfe1f4b-df0f-5b1d-4a4d-5581436e2e84",
+    "Name": "ISAIntegrationEndpointDTE",
+    "ModifiedOnUtc": "\/Date(1768190361000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "64c6edb0-3acb-41e0-bf82-52a08ecda65d",
+      "Name": "ISAIntegrationEndpoint"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "1d10da68-699f-b104-8865-67f98eec73cd",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ISAIntegrationDetail",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "2fc1264f-70b0-ed0f-728c-a07b76d7af67",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ISAUsername",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "0cfeecff-d0af-a6f6-4908-310af85b7081",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ISAMethod",
+        "DataTypeValueUId": "325a73b8-0f47-44a0-8412-7606f78003ac"
+      },
+      {
+        "ColumnUId": "692621a2-87da-c5d0-a433-422a027fa97e",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ISAName",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "0699d811-5c82-ff39-a7b3-1f6a9b557bc3",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ISAPassword",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "9c086521-9019-8dcd-4c99-f614a53cb3ab",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ISAToken",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "ccdc9be3-3264-898f-bf79-53966d63cd6c",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ISAEndpointURL",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "408c4348-54dd-32a1-d587-55b387b9b59f",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ISAAuthFromHeader",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      }
+    ]
+  }
+}

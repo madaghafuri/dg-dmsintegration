@@ -1,0 +1,70 @@
+﻿{
+  "Descriptor": {
+    "UId": "d2894d1d-e8a7-68bf-74ac-12d499dd5a50",
+    "Name": "ISAIntegrationDetailDMS",
+    "ModifiedOnUtc": "\/Date(1760516341000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "c210a943-f08f-4188-a07b-ccfbab8976c4",
+      "Name": "ISAIntegrationDetail"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "dfb471a9-8d61-91fc-9fba-e8dfae9bf687",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ISAUsername",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "fd9aa954-0d4e-d997-7d9b-49b96c84cb18",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ISAType",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "c4c02bbf-816f-d5e9-0925-6efdeccfcac6",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ISAIntegrationSetup",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "1ac22a8c-6d4e-a61d-abb1-f6f04435dcf4",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ISAPassword",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "fd6eb86f-9d4c-56c0-802c-28cadd5ffbd2",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ISABaseURL",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "95ab8fa5-1d75-3249-5ecf-b6e90ecb1e9c",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ISAToken",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "d58625fe-18f8-d194-ebf3-c020b44b7723",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ISAName",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      }
+    ]
+  }
+}

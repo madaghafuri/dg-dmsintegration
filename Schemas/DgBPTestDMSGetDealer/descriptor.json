@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "4bf9a89c-3500-489f-9d72-c325c6d1474a",
+    "Name": "DgBPTestDMSGetDealer",
+    "ModifiedOnUtc": "\/Date(1758881563000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "[Test] DMS: Get Dealer",
+    "DependsOn": []
+  }
+}

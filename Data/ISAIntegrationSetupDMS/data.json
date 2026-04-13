@@ -1,0 +1,21 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "b5736dc1-3bd2-48c3-8e57-83bafc391a09"
+        },
+        {
+          "SchemaColumnUId": "22d97f89-649b-4724-a9ec-8e6b6837fa86",
+          "Value": "DMS"
+        },
+        {
+          "SchemaColumnUId": "2f9f8820-c24e-211d-0a14-11c5e7ee8712",
+          "Value": "061d783d-3a9d-417a-938f-fc30e4ecc5df",
+          "DisplayValue": "Staging"
+        }
+      ]
+    }
+  ]
+}

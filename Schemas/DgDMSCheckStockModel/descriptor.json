@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "c140454b-e7a6-4eab-9d23-2a6c670091fe",
+    "Name": "DgDMSCheckStockModel",
+    "ModifiedOnUtc": "\/Date(1737603811000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "DMS: Check Stock Model",
+    "DependsOn": []
+  }
+}

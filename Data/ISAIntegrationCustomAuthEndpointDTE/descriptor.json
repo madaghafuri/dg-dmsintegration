@@ -1,0 +1,42 @@
+﻿{
+  "Descriptor": {
+    "UId": "3208a877-b406-bde6-6f3e-f43013a9a6dd",
+    "Name": "ISAIntegrationCustomAuthEndpointDTE",
+    "ModifiedOnUtc": "\/Date(1768190641000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "d8d3cb0e-872f-4a08-bfbb-212cfc9655cf",
+      "Name": "ISAIntegrationCustomAuthEndpoint"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "1ff27dac-ef09-b87c-a2e8-01b70dbeec72",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ISAKey",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "f65dd3e1-5eb4-edd2-9d16-bbad36004001",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ISAIntegrationEndpoint",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "d2d817fb-111e-3bf3-23d7-59fef70f37b2",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ISAValue",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      }
+    ]
+  }
+}

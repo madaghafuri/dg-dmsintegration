@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "c6a030fa-49fd-4cdc-9f0c-cedd5c5182f3",
+    "Name": "DgDMSReserveStock",
+    "ModifiedOnUtc": "\/Date(1736759010000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "DMS: Reserve Stock Service",
+    "DependsOn": []
+  }
+}

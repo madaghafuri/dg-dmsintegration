@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "572ce441-da08-430e-93e1-24fd536d7f1f",
+    "Name": "DgBPTestDMSToken",
+    "ModifiedOnUtc": "\/Date(1758881570000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "[Test] DMS Get Token",
+    "DependsOn": []
+  }
+}

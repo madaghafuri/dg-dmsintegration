@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.ConditionalSequenceFlow1.Caption" Value="Create Product Failed" />
+			<Item Name="BaseElements.ScriptTask1.Caption" Value="Auto Create Product" />
+			<Item Name="BaseElements.SubProcess1.Caption" Value="DMS - Auto Unreserve after UERP Callback 1" />
+			<Item Name="BaseElements.SubProcess1.Parameters.SOID.Caption" Value="SOID" />
+			<Item Name="BaseElements.SubProcess1.Parameters.SOID.DisplayValue" Value="[#SOID#]" />
+			<Item Name="BaseElements.SubProcess1.Parameters.SubmissionId.Caption" Value="SubmissionId" />
+			<Item Name="BaseElements.SubProcess1.Parameters.SubmissionId.DisplayValue" Value="[#SubmissionId#]" />
+			<Item Name="Caption" Value="DMS - Auto Create Product after UERP callback" />
+			<Item Name="NotificationCaption.DisplayValue" Value="[#[PropertyValue:Caption]#]" />
+			<Item Name="Parameters.IsSuccess.Caption" Value="IsSuccess" />
+			<Item Name="Parameters.LineCommonInventory.Caption" Value="LineCommonInventory" />
+			<Item Name="Parameters.OFSDoNo.Caption" Value="OFSDoNo" />
+			<Item Name="Parameters.SOID.Caption" Value="SOID" />
+			<Item Name="Parameters.SubmissionId.Caption" Value="SubmissionId" />
+		</Items>
+	</Group>
+</Resources>

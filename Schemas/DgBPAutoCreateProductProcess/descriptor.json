@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "16a82738-a392-41bb-be86-99b3134cf71b",
+    "Name": "DgBPAutoCreateProductProcess",
+    "ModifiedOnUtc": "\/Date(1758881545000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "DMS - Auto Create Product after UERP callback",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,16 @@
+﻿{
+  "Descriptor": {
+    "UId": "df8d3d22-39e6-b335-1031-b0b7a094e783",
+    "PackageVersion": "1.0.0",
+    "Name": "DgDMSIntegration",
+    "ModifiedOnUtc": "\/Date(1758881310000)\/",
+    "Maintainer": "Customer",
+    "DependsOn": [
+      {
+        "UId": "9f4f64c2-5303-eff3-a0cf-981091d7b940",
+        "PackageVersion": "1.0.0",
+        "Name": "DgSubmission"
+      }
+    ]
+  }
+}

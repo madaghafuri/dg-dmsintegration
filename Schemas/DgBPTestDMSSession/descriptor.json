@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "05df8413-64ef-4fcb-a3ff-85b889900b14",
+    "Name": "DgBPTestDMSSession",
+    "ModifiedOnUtc": "\/Date(1758881567000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "[Test] DMS Session",
+    "DependsOn": []
+  }
+}

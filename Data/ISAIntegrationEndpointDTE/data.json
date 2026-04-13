@@ -1,0 +1,414 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "1886254f-cb3e-4737-86cb-99d53db720cb"
+        },
+        {
+          "SchemaColumnUId": "0699d811-5c82-ff39-a7b3-1f6a9b557bc3",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "0cfeecff-d0af-a6f6-4908-310af85b7081",
+          "Value": "POST"
+        },
+        {
+          "SchemaColumnUId": "1d10da68-699f-b104-8865-67f98eec73cd",
+          "Value": "5138dcd8-ff74-4b6c-9bda-42de7f80e527",
+          "DisplayValue": "DTE: SIT (DMS)"
+        },
+        {
+          "SchemaColumnUId": "2fc1264f-70b0-ed0f-728c-a07b76d7af67",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "408c4348-54dd-32a1-d587-55b387b9b59f",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "692621a2-87da-c5d0-a433-422a027fa97e",
+          "Value": "CreateProduct"
+        },
+        {
+          "SchemaColumnUId": "9c086521-9019-8dcd-4c99-f614a53cb3ab",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "ccdc9be3-3264-898f-bf79-53966d63cd6c",
+          "Value": "mw/product-order-management/productOrderingManagement/v5/product/order"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "354e3e33-caf8-4be6-98a3-4a5066a41eed"
+        },
+        {
+          "SchemaColumnUId": "0699d811-5c82-ff39-a7b3-1f6a9b557bc3",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "0cfeecff-d0af-a6f6-4908-310af85b7081",
+          "Value": "POST"
+        },
+        {
+          "SchemaColumnUId": "1d10da68-699f-b104-8865-67f98eec73cd",
+          "Value": "36f1bdfc-de3c-4758-9a24-f80a013de946",
+          "DisplayValue": "DTE: Staging"
+        },
+        {
+          "SchemaColumnUId": "2fc1264f-70b0-ed0f-728c-a07b76d7af67",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "408c4348-54dd-32a1-d587-55b387b9b59f",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "692621a2-87da-c5d0-a433-422a027fa97e",
+          "Value": "CreateProduct"
+        },
+        {
+          "SchemaColumnUId": "9c086521-9019-8dcd-4c99-f614a53cb3ab",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "ccdc9be3-3264-898f-bf79-53966d63cd6c",
+          "Value": "mw/product-order-management/productOrderingManagement/v5/product/order"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "789b8c3a-c9cd-4e7a-b127-f413878cbff1"
+        },
+        {
+          "SchemaColumnUId": "0699d811-5c82-ff39-a7b3-1f6a9b557bc3",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "0cfeecff-d0af-a6f6-4908-310af85b7081",
+          "Value": "GET"
+        },
+        {
+          "SchemaColumnUId": "1d10da68-699f-b104-8865-67f98eec73cd",
+          "Value": "5138dcd8-ff74-4b6c-9bda-42de7f80e527",
+          "DisplayValue": "DTE: SIT (DMS)"
+        },
+        {
+          "SchemaColumnUId": "2fc1264f-70b0-ed0f-728c-a07b76d7af67",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "408c4348-54dd-32a1-d587-55b387b9b59f",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "692621a2-87da-c5d0-a433-422a027fa97e",
+          "Value": "Dealer"
+        },
+        {
+          "SchemaColumnUId": "9c086521-9019-8dcd-4c99-f614a53cb3ab",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "ccdc9be3-3264-898f-bf79-53966d63cd6c",
+          "Value": "mw/party-management-organization/party/v5/organization"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "8c2a0d6a-1886-4dd6-bc42-677c5e470758"
+        },
+        {
+          "SchemaColumnUId": "0699d811-5c82-ff39-a7b3-1f6a9b557bc3",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "0cfeecff-d0af-a6f6-4908-310af85b7081",
+          "Value": "POST"
+        },
+        {
+          "SchemaColumnUId": "1d10da68-699f-b104-8865-67f98eec73cd",
+          "Value": "36f1bdfc-de3c-4758-9a24-f80a013de946",
+          "DisplayValue": "DTE: Staging"
+        },
+        {
+          "SchemaColumnUId": "2fc1264f-70b0-ed0f-728c-a07b76d7af67",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "408c4348-54dd-32a1-d587-55b387b9b59f",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "692621a2-87da-c5d0-a433-422a027fa97e",
+          "Value": "Token"
+        },
+        {
+          "SchemaColumnUId": "9c086521-9019-8dcd-4c99-f614a53cb3ab",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "ccdc9be3-3264-898f-bf79-53966d63cd6c",
+          "Value": "realms/mw-preprod-realm/protocol/openid-connect/token"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "8f610191-b9a2-4780-8271-e7a9a00c8901"
+        },
+        {
+          "SchemaColumnUId": "0699d811-5c82-ff39-a7b3-1f6a9b557bc3",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "0cfeecff-d0af-a6f6-4908-310af85b7081",
+          "Value": "POST"
+        },
+        {
+          "SchemaColumnUId": "1d10da68-699f-b104-8865-67f98eec73cd",
+          "Value": "36f1bdfc-de3c-4758-9a24-f80a013de946",
+          "DisplayValue": "DTE: Staging"
+        },
+        {
+          "SchemaColumnUId": "2fc1264f-70b0-ed0f-728c-a07b76d7af67",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "408c4348-54dd-32a1-d587-55b387b9b59f",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "692621a2-87da-c5d0-a433-422a027fa97e",
+          "Value": "CheckStock"
+        },
+        {
+          "SchemaColumnUId": "9c086521-9019-8dcd-4c99-f614a53cb3ab",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "ccdc9be3-3264-898f-bf79-53966d63cd6c",
+          "Value": "mw/stock-management/stockManagement/v4/queryProductStock"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "96691c4b-0795-426e-94cc-1eb1ad215aad"
+        },
+        {
+          "SchemaColumnUId": "0699d811-5c82-ff39-a7b3-1f6a9b557bc3",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "0cfeecff-d0af-a6f6-4908-310af85b7081",
+          "Value": "POST"
+        },
+        {
+          "SchemaColumnUId": "1d10da68-699f-b104-8865-67f98eec73cd",
+          "Value": "5138dcd8-ff74-4b6c-9bda-42de7f80e527",
+          "DisplayValue": "DTE: SIT (DMS)"
+        },
+        {
+          "SchemaColumnUId": "2fc1264f-70b0-ed0f-728c-a07b76d7af67",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "408c4348-54dd-32a1-d587-55b387b9b59f",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "692621a2-87da-c5d0-a433-422a027fa97e",
+          "Value": "CheckStock"
+        },
+        {
+          "SchemaColumnUId": "9c086521-9019-8dcd-4c99-f614a53cb3ab",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "ccdc9be3-3264-898f-bf79-53966d63cd6c",
+          "Value": "mw/stock-management/stockManagement/v4/queryProductStock"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "a17f1d38-758c-497b-9ccc-50fd6ddf6680"
+        },
+        {
+          "SchemaColumnUId": "0699d811-5c82-ff39-a7b3-1f6a9b557bc3",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "0cfeecff-d0af-a6f6-4908-310af85b7081",
+          "Value": "POST"
+        },
+        {
+          "SchemaColumnUId": "1d10da68-699f-b104-8865-67f98eec73cd",
+          "Value": "36f1bdfc-de3c-4758-9a24-f80a013de946",
+          "DisplayValue": "DTE: Staging"
+        },
+        {
+          "SchemaColumnUId": "2fc1264f-70b0-ed0f-728c-a07b76d7af67",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "408c4348-54dd-32a1-d587-55b387b9b59f",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "692621a2-87da-c5d0-a433-422a027fa97e",
+          "Value": "ReserveUnreserve"
+        },
+        {
+          "SchemaColumnUId": "9c086521-9019-8dcd-4c99-f614a53cb3ab",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "ccdc9be3-3264-898f-bf79-53966d63cd6c",
+          "Value": "mw/stock-management/stockManagement/v4/reserveProductStock"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "bcbaca3c-d94d-4b23-a9dd-6351c1d317f2"
+        },
+        {
+          "SchemaColumnUId": "0699d811-5c82-ff39-a7b3-1f6a9b557bc3",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "0cfeecff-d0af-a6f6-4908-310af85b7081",
+          "Value": "POST"
+        },
+        {
+          "SchemaColumnUId": "1d10da68-699f-b104-8865-67f98eec73cd",
+          "Value": "5138dcd8-ff74-4b6c-9bda-42de7f80e527",
+          "DisplayValue": "DTE: SIT (DMS)"
+        },
+        {
+          "SchemaColumnUId": "2fc1264f-70b0-ed0f-728c-a07b76d7af67",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "408c4348-54dd-32a1-d587-55b387b9b59f",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "692621a2-87da-c5d0-a433-422a027fa97e",
+          "Value": "Token"
+        },
+        {
+          "SchemaColumnUId": "9c086521-9019-8dcd-4c99-f614a53cb3ab",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "ccdc9be3-3264-898f-bf79-53966d63cd6c",
+          "Value": "realms/mw-sit-realm/protocol/openid-connect/token"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "bf15e7dd-b385-4ecc-9b5c-7883294af067"
+        },
+        {
+          "SchemaColumnUId": "0699d811-5c82-ff39-a7b3-1f6a9b557bc3",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "0cfeecff-d0af-a6f6-4908-310af85b7081",
+          "Value": "POST"
+        },
+        {
+          "SchemaColumnUId": "1d10da68-699f-b104-8865-67f98eec73cd",
+          "Value": "5138dcd8-ff74-4b6c-9bda-42de7f80e527",
+          "DisplayValue": "DTE: SIT (DMS)"
+        },
+        {
+          "SchemaColumnUId": "2fc1264f-70b0-ed0f-728c-a07b76d7af67",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "408c4348-54dd-32a1-d587-55b387b9b59f",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "692621a2-87da-c5d0-a433-422a027fa97e",
+          "Value": "ReserveUnreserve"
+        },
+        {
+          "SchemaColumnUId": "9c086521-9019-8dcd-4c99-f614a53cb3ab",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "ccdc9be3-3264-898f-bf79-53966d63cd6c",
+          "Value": "mw/stock-management/stockManagement/v4/reserveProductStock"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "dce0da71-e64b-4c80-9e53-4fb0aba58729"
+        },
+        {
+          "SchemaColumnUId": "0699d811-5c82-ff39-a7b3-1f6a9b557bc3",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "0cfeecff-d0af-a6f6-4908-310af85b7081",
+          "Value": "GET"
+        },
+        {
+          "SchemaColumnUId": "1d10da68-699f-b104-8865-67f98eec73cd",
+          "Value": "36f1bdfc-de3c-4758-9a24-f80a013de946",
+          "DisplayValue": "DTE: Staging"
+        },
+        {
+          "SchemaColumnUId": "2fc1264f-70b0-ed0f-728c-a07b76d7af67",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "408c4348-54dd-32a1-d587-55b387b9b59f",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "692621a2-87da-c5d0-a433-422a027fa97e",
+          "Value": "Dealer"
+        },
+        {
+          "SchemaColumnUId": "9c086521-9019-8dcd-4c99-f614a53cb3ab",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "ccdc9be3-3264-898f-bf79-53966d63cd6c",
+          "Value": "mw/party-management-organization/party/v5/organization"
+        }
+      ]
+    }
+  ]
+}
