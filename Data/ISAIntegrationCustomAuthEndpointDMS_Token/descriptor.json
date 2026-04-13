@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "78389d16-eea3-fc30-3b44-284f6eea8e42",
     "Name": "ISAIntegrationCustomAuthEndpointDMS_Token",
-    "ModifiedOnUtc": "\/Date(1767761322000)\/",
+    "ModifiedOnUtc": "\/Date(1738913560000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "d8d3cb0e-872f-4a08-bfbb-212cfc9655cf",
@@ -10,18 +10,18 @@
     },
     "Columns": [
       {
-        "ColumnUId": "1ff27dac-ef09-b87c-a2e8-01b70dbeec72",
-        "IsForceUpdate": true,
-        "IsKey": false,
-        "ColumnName": "ISAKey",
-        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
-      },
-      {
         "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
         "IsForceUpdate": false,
         "IsKey": true,
         "ColumnName": "Id",
         "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "1ff27dac-ef09-b87c-a2e8-01b70dbeec72",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ISAKey",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
       },
       {
         "ColumnUId": "f65dd3e1-5eb4-edd2-9d16-bbad36004001",

@@ -110,116 +110,67 @@ namespace DgIntegration.DgDMS
 			return true;
 		}
 		
-        // public static List<DeviceUnavailableGroup> GetUnavailableDevice(List<string> DeviceItems, CheckStockSuccessResponse Response)
-        // {
-        //     Dictionary<string, int> deviceGroup = DeviceItems
-        //         .GroupBy(item => item)
-        //         .ToDictionary(
-        //             item => item.Key,
-        //             item => item.Count()
-        //         );
-
-        //     var list = new List<DeviceUnavailableGroup>();
-
-        //     foreach (var device in deviceGroup) {
-        //         //var emptyStock = Response.queryProductStockItem.Find(item => item.quantityAvailable.amount == 0); // Eka Comentary on 8 Dec 2025
-        //         var dev = Response.queryProductStockItem.FirstOrDefault(); // Eka Comment Adding 8 - dec 2025
-                
-
-        //         ///var dev = Response.queryProductStockItem.Find(item => item.productSpecification.id == device.Key); // Eka Comentary on 8 Dec 2025
-        //         /// if (dev == null) {
-        //         ///     var deviceObj = new DeviceUnavailableGroup {
-        //         ///         Device = device.Key,
-        //         ///         Qty = 0,
-        //         ///         QtyAvailable = 0,
-        //         ///         Message = "SKU Not Found"
-        //         ///     };
-        //         ///     list.Add(deviceObj);
-        //         /// } else if (dev.quantityAvailable.amount < device.Value) {
-        //         ///     var deviceObj = new DeviceUnavailableGroup {
-        //         ///         Device = device.Key,
-        //         ///         Qty = device.Value,
-        //         ///         QtyAvailable = dev.quantityAvailable.amount,
-        //         ///         Message = "Stock Not Available"
-        //         ///     };
-        //         ///     list.Add(deviceObj);
-        //         /// }
-        //         if (dev != null && dev.quantityAvailable.amount < device.Value) {
-        //             var deviceObj = new DeviceUnavailableGroup {
-        //                 Device = device.Key,
-        //                 Qty = device.Value,
-        //                 QtyAvailable = dev.quantityAvailable.amount,
-        //                 Message = "Stock Not Available"
-        //             };
-        //             list.Add(deviceObj);
-        //         } 
-        //     }
-            
-        //     if (list.Count == 0 && Response != null && Response.queryProductStockItem != null && Response.queryProductStockItem.Count > 0)
-        //     {
-        //         foreach (var device in Response.queryProductStockItem)
-        //         {
-        //             if (device.quantityAvailable.amount == 0)
-        //             {
-        //                 list.Add(new DeviceUnavailableGroup
-        //                 {
-        //                     Device = device.productSpecification.id,
-        //                     Qty = 1,
-        //                     QtyAvailable = 0,
-        //                     Message = "Stock Not Available"
-        //                 });
-        //             }
-        //         }
-        //     }
-
-        //     return list;
-        // }
-
-        //--- Rewrite GetUnavailableDevice to match by index, not by productSpecification.id =--// -- EKA 10 DEC 2025 --//
         public static List<DeviceUnavailableGroup> GetUnavailableDevice(List<string> DeviceItems, CheckStockSuccessResponse Response)
         {
-            var deviceGroup = DeviceItems
+            Dictionary<string, int> deviceGroup = DeviceItems
                 .GroupBy(item => item)
                 .ToDictionary(
-                    g => g.Key,
-                    g => g.Count()
+                    item => item.Key,
+                    item => item.Count()
                 );
 
             var list = new List<DeviceUnavailableGroup>();
 
-            var requestList = deviceGroup.Keys.ToList();
-            var responseList = Response?.queryProductStockItem;
-
-            if (responseList == null || responseList.Count < requestList.Count)
-            {
-                throw new Exception("Invalid DMS response: insufficient stock items returned. Ask your Administrator to check your request and DMS service.");
-            }
-
-            for (int i = 0; i < requestList.Count; i++)
-            {
-                string requestedId = requestList[i];
-                var respItem = responseList[i];
-
-                int qtyRequested = deviceGroup[requestedId];
-                int qtyAvailable = respItem.quantityAvailable.amount;
-
-                if (qtyAvailable < qtyRequested)
-                {
-                    list.Add(new DeviceUnavailableGroup
-                    {
-                        Device = requestedId,
-                        Qty = qtyRequested,
-                        QtyAvailable = qtyAvailable,
+            foreach (var device in deviceGroup) {
+                var emptyStock = Response.queryProductStockItem.Find(item => item.quantityAvailable.amount == 0);
+                var dev = Response.queryProductStockItem.Find(item => item.productSpecification.id == device.Key);
+                // if (dev == null) {
+                //     var deviceObj = new DeviceUnavailableGroup {
+                //         Device = device.Key,
+                //         Qty = 0,
+                //         QtyAvailable = 0,
+                //         Message = "SKU Not Found"
+                //     };
+                //     list.Add(deviceObj);
+                // } else if (dev.quantityAvailable.amount < device.Value) {
+                //     var deviceObj = new DeviceUnavailableGroup {
+                //         Device = device.Key,
+                //         Qty = device.Value,
+                //         QtyAvailable = dev.quantityAvailable.amount,
+                //         Message = "Stock Not Available"
+                //     };
+                //     list.Add(deviceObj);
+                // }
+                if (dev != null && dev.quantityAvailable.amount < device.Value) {
+                    var deviceObj = new DeviceUnavailableGroup {
+                        Device = device.Key,
+                        Qty = device.Value,
+                        QtyAvailable = dev.quantityAvailable.amount,
                         Message = "Stock Not Available"
-                    });
+                    };
+                    list.Add(deviceObj);
+                } 
+            }
+            
+            if (list.Count == 0 && Response != null && Response.queryProductStockItem != null && Response.queryProductStockItem.Count > 0)
+            {
+                foreach (var device in Response.queryProductStockItem)
+                {
+                    if (device.quantityAvailable.amount == 0)
+                    {
+                        list.Add(new DeviceUnavailableGroup
+                        {
+                            Device = device.productSpecification.id,
+                            Qty = 1,
+                            QtyAvailable = 0,
+                            Message = "Stock Not Available"
+                        });
+                    }
                 }
             }
 
             return list;
         }
-
-
-        //--- Rewrite GetUnavailableDevice to match by index, not by productSpecification.id =--// -- EKA 10 DEC 2025 --//
 
         protected virtual List<CheckStockRequest> BuildRequestList(List<Guid> RecordIds)
         {

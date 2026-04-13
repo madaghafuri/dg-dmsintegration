@@ -42,37 +42,54 @@ namespace DgIntegration.DgDMS
 		
 		public async Task<string> GetToken(string ClientId, string ClientSecret, string GrantType)
         {
-            var token = new Token(UserConnection);
-            var data = token.GetParam(ClientId, ClientSecret, GrantType);
-			
-			return await GetToken(data);
+            if(string.IsNullOrEmpty(ClientId) || string.IsNullOrEmpty(ClientSecret) || string.IsNullOrEmpty(GrantType)) {
+                throw new ArgumentException("ClientId, ClientSecret, and GrantType are required");
+            }
+
+            var tokenHelper = new Token(UserConnection);
+            var data = tokenHelper.GetParam(ClientId, ClientSecret, GrantType);
+
+            return await GetToken(data, tokenHelper);
         }
-		
+
 		public async Task<string> GetToken()
         {
             Setup setup = this.setups
                 .Where(item => item.Name == "Token")
                 .FirstOrDefault();
 
-            var customAuth = setup?.Authentication.Custom;
-            string ClientId = customAuth.FirstOrDefault(item => item.Key == "client_id")?.Value;
-            string ClientSecret = customAuth.FirstOrDefault(item => item.Key == "client_secret")?.Value;
-            string GrantType = customAuth.FirstOrDefault(item => item.Key == "grant_type")?.Value;
-            
-			var token = new Token(UserConnection);
-            var data = token.GetParam(ClientId, ClientSecret, GrantType);
+            if(setup == null) {
+                throw new InvalidOperationException("Token setup configuration not found");
+            }
 
-            return await GetToken(data);
+            var customAuth = setup?.Authentication.Custom;
+            string ClientId = customAuth?.FirstOrDefault(item => item.Key == "client_id")?.Value;
+            string ClientSecret = customAuth?.FirstOrDefault(item => item.Key == "client_secret")?.Value;
+            string GrantType = customAuth?.FirstOrDefault(item => item.Key == "grant_type")?.Value;
+
+            if(string.IsNullOrEmpty(ClientId) || string.IsNullOrEmpty(ClientSecret) || string.IsNullOrEmpty(GrantType)) {
+                throw new InvalidOperationException("Token authentication parameters not configured properly");
+            }
+
+            var tokenHelper = new Token(UserConnection);
+            var data = tokenHelper.GetParam(ClientId, ClientSecret, GrantType);
+
+            return await GetToken(data, tokenHelper);
         }
-		
+
         public async Task<string> GetToken(TokenRequest Param)
         {
-            var token = new Token(UserConnection);
-            var tokenCache = token.GetCacheToken();
-			if(!string.IsNullOrEmpty(tokenCache)) {
-				return tokenCache;
-			}
-			
+            var tokenHelper = new Token(UserConnection);
+            return await GetToken(Param, tokenHelper);
+        }
+
+        private async Task<string> GetToken(TokenRequest Param, Token tokenHelper)
+        {
+            var tokenCache = tokenHelper.GetCacheToken();
+            if(!string.IsNullOrEmpty(tokenCache)) {
+                return tokenCache;
+            }
+
             var logInfo = new LogInfo() {
                 LogName = "DTE: Get Token",
                 Section = "DTE (DMS)"
@@ -81,28 +98,43 @@ namespace DgIntegration.DgDMS
             Setup setup = this.setups
                 .FirstOrDefault(item => item.Name == "Token");
 
-            string endpoint = setup?.EndpointUrl ?? string.Empty;
-			var request = new HttpRequestMessage(HttpMethod.Post, endpoint);
+            if(setup == null || string.IsNullOrEmpty(setup.EndpointUrl)) {
+                throw new InvalidOperationException("Token endpoint URL not configured");
+            }
+
+            string endpoint = setup.EndpointUrl;
+            var request = new HttpRequestMessage(HttpMethod.Post, endpoint);
             request.Content = new FormUrlEncodedContent(Param.ToDictionary());
 
-			var response = await SendRequest<TokenResponse>(request, logInfo, new TokenResponseConverter());
+            var response = await SendRequest<TokenResponse>(request, logInfo, new TokenResponseConverter());
 
             if (!response.IsSuccess && response.StatusCode >= 400 && response.StatusCode <= 500 && response.Body != null) {
                 var errorRes = response.Body as TokenErrorResponse;
-                string errorResponse = $"{errorRes.error}. {errorRes.error_description}";                
-                throw new Exception($"Token Error: {errorResponse}");
+                if(errorRes != null) {
+                    string errorResponse = $"{errorRes.error}. {errorRes.error_description}";
+                    throw new Exception($"Token Error: {errorResponse}");
+                }
             }
-			
-			if(!response.IsSuccess && response.Body == null) {
-				throw new Exception(response.Message);
-			}
-			
+
+            if(!response.IsSuccess) {
+                throw new Exception($"Token request failed: {response.Message}");
+            }
+
             var successRes = response.Body as TokenSuccessResponse;
-			token.UpdateCacheToken(successRes.access_token, long.Parse(successRes.expires_in.ToString()));
-			
+            if(successRes == null || string.IsNullOrEmpty(successRes.access_token)) {
+                throw new Exception("Invalid token response received");
+            }
+
+            long expiresIn = 0;
+            if(successRes.expires_in != null && long.TryParse(successRes.expires_in.ToString(), out expiresIn)) {
+                tokenHelper.UpdateCacheToken(successRes.access_token, expiresIn);
+            } else {
+                tokenHelper.UpdateCacheToken(successRes.access_token, 3600);
+            }
+
             return successRes.access_token;
         }
-		
+
 		#endregion
 
         #region CheckStock
