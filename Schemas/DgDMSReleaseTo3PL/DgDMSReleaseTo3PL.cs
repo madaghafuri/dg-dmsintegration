@@ -793,21 +793,14 @@ namespace DgIntegration.DgReleaseTo3PL
                 .Where("customer", "DgIdNumber").IsEqual(Column.Parameter(brn)) as Select;
 
             var result = new List<dynamic>();
+            bool exist = false;
             using (var dbExecutor = UserConnection.EnsureDBConnection())
             {
-                using (var dataReader = query.ExecuteReader(dbExecutor))
-                {
-                    while (dataReader.Read())
-                    {
-                        result.Add(new
-                        {
-                            CustomerId = dataReader.GetColumnValue<string>("ERPCustomerCode"),
-                        });
-                    }
-                }
+                var scalar = query.ExecuteScalar<object>(dbExecutor);
+                exist = scalar != null && scalar != DBNull.Value;
             }
 
-            return result.Count > 0;
+            return exist;
         }
 
         protected virtual async Task<string> SendToUERP(List<Guid> LineDetails)
