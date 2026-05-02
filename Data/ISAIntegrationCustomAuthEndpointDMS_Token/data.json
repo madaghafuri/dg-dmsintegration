@@ -4,48 +4,6 @@
       "Row": [
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
-          "Value": "2dd88119-98f7-4a5a-b243-31bf90b00cab"
-        },
-        {
-          "SchemaColumnUId": "1ff27dac-ef09-b87c-a2e8-01b70dbeec72",
-          "Value": "grant_type"
-        },
-        {
-          "SchemaColumnUId": "d2d817fb-111e-3bf3-23d7-59fef70f37b2",
-          "Value": "client_credentials"
-        },
-        {
-          "SchemaColumnUId": "f65dd3e1-5eb4-edd2-9d16-bbad36004001",
-          "Value": "d0244772-99f3-44b8-b211-07ea6eeda276",
-          "DisplayValue": "Token"
-        }
-      ]
-    },
-    {
-      "Row": [
-        {
-          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
-          "Value": "3ac318ac-6286-4269-a6c8-2fee434e7cce"
-        },
-        {
-          "SchemaColumnUId": "1ff27dac-ef09-b87c-a2e8-01b70dbeec72",
-          "Value": "client_secret"
-        },
-        {
-          "SchemaColumnUId": "d2d817fb-111e-3bf3-23d7-59fef70f37b2",
-          "Value": "3WUbdnLhYvMQe6Vda3STawxjWUenTCua"
-        },
-        {
-          "SchemaColumnUId": "f65dd3e1-5eb4-edd2-9d16-bbad36004001",
-          "Value": "d0244772-99f3-44b8-b211-07ea6eeda276",
-          "DisplayValue": "Token"
-        }
-      ]
-    },
-    {
-      "Row": [
-        {
-          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "Value": "55e0f193-568b-4b0b-ba34-c0280443fe60"
         },
         {
@@ -54,7 +12,7 @@
         },
         {
           "SchemaColumnUId": "d2d817fb-111e-3bf3-23d7-59fef70f37b2",
-          "Value": "T17jlkHuyFrb571MMYuHDYWoABZY8eIn"
+          "Value": "SW6VoLTnpfueWDxxH4fUAkcAPKrmWS0u"
         },
         {
           "SchemaColumnUId": "f65dd3e1-5eb4-edd2-9d16-bbad36004001",
@@ -80,27 +38,6 @@
         {
           "SchemaColumnUId": "f65dd3e1-5eb4-edd2-9d16-bbad36004001",
           "Value": "d8d8aa03-a14f-472e-b70a-fe1541d65cb0",
-          "DisplayValue": "Token"
-        }
-      ]
-    },
-    {
-      "Row": [
-        {
-          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
-          "Value": "a27cb9d7-c519-4fbc-8f74-91b37059e904"
-        },
-        {
-          "SchemaColumnUId": "1ff27dac-ef09-b87c-a2e8-01b70dbeec72",
-          "Value": "client_id"
-        },
-        {
-          "SchemaColumnUId": "d2d817fb-111e-3bf3-23d7-59fef70f37b2",
-          "Value": "mw-nccf-user"
-        },
-        {
-          "SchemaColumnUId": "f65dd3e1-5eb4-edd2-9d16-bbad36004001",
-          "Value": "d0244772-99f3-44b8-b211-07ea6eeda276",
           "DisplayValue": "Token"
         }
       ]

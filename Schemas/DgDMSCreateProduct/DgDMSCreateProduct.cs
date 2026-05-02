@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
 using Terrasoft.Configuration;
 using Terrasoft.Core;
 using Terrasoft.Core.Entities;
@@ -60,42 +59,7 @@ namespace DgIntegration.DgDMS
                 throw new Exception("Related Party cannot be null or empty");
             }
 
-            if (Param.relatedParty != null && Param.relatedParty.Count > 0)
-            {
-                foreach (var party in Param.relatedParty)
-                {
-                    if (party.contactMedium != null && party.contactMedium.Count > 0)
-                    {
-                        foreach (var contact in party.contactMedium)
-                        {
-                            var valid = ValidateAddress(contact.characteristic.streetAddress1);
-                            if (!valid.IsValid)
-                            {
-                                throw new Exception(valid.Message);
-                            }
-                        }
-                    }
-                }
-            }
-
             return Param;
-        }
-
-        protected virtual (bool IsValid, string Message) ValidateAddress(string address)
-        {
-            string allowedPattern = @"[a-zA-Z0-9\s\.,\-\'\( \)#]";
-            var forbiddenChars = address
-                .Where(c => !Regex.IsMatch(c.ToString(), allowedPattern))
-                .Distinct()
-                .ToList();
-
-            if (forbiddenChars.Any())
-            {
-                string illegalList = string.Join(" ", forbiddenChars);
-                return (false, $"Delivery Address Validation: The following characters are not allowed: {illegalList}");
-            }
-
-            return (true, "Valid");
         }
 
         public virtual dynamic BuildRequestWithERPBySOID(string SOID) {
@@ -103,7 +67,7 @@ namespace DgIntegration.DgDMS
             EntitySchemaQuery esq = query.esq;
             Dictionary<string, EntitySchemaQueryColumn> columns = query.columns; 
 
-            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "DgSOID", SOID));
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "DgSalesOrderId", SOID));
 
             var entities = esq.GetEntityCollection(UserConnection);
 
@@ -122,7 +86,7 @@ namespace DgIntegration.DgDMS
             var Admin2Name = entity.GetTypedColumnValue<string>(columns["Admin2Name"].Name);
             var street1 = entity.GetTypedColumnValue<string>(columns["StreetAddress1"].Name);
             var street2 = string.Empty;
-            var soId = entity.GetTypedColumnValue<string>(columns["SOID"].Name);
+            var soId = entity.GetTypedColumnValue<string>(columns["SAPOrderID"].Name);
 
             if (!string.IsNullOrEmpty(street1) && street1.Length > 200)
             {
@@ -135,7 +99,7 @@ namespace DgIntegration.DgDMS
                 new CPExternalReference
                 {
                     externalIdentifierType = "ChannelReference",
-                    id = entity.GetTypedColumnValue<string>(columns["SOID"].Name)
+                    id = entity.GetTypedColumnValue<string>(columns["SAPOrderID"].Name)
                 }
             };
 
@@ -723,6 +687,8 @@ namespace DgIntegration.DgDMS
             columns.Add("IMSIType", esq.AddColumn("DgOrderIMSIType.Name"));
             columns.Add("Username", esq.AddColumn("DgUsername"));
             columns.Add("LineID", esq.AddColumn("DgLineId"));
+            // Order number from ERP (SAP)
+            columns.Add("SAPOrderID", esq.AddColumn("DgSalesOrderId"));
 
             columns.Add("StreetAddress1", esq.AddColumn("DgSubmission.DgCRMGroup.DgDeliveryaddress"));
             columns.Add("PostCode", esq.AddColumn("DgSubmission.DgCRMGroup.DgPostcodeAdmInformationDelivery.Name"));

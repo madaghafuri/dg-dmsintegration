@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "3366f852-1a2d-43d7-93f3-162ee928c9c6",
     "Name": "DgDMSCheckStock",
-    "ModifiedOnUtc": "\/Date(1765352853000)\/",
+    "ModifiedOnUtc": "\/Date(1764041510000)\/",
     "ManagerName": "SourceCodeSchemaManager",
     "Caption": "DMS: Check Stock Service"
   }
